@@ -86,8 +86,8 @@ $(document).ready( function( $ ){
 	//reset the search field
 	//empty and reload current persistence object and reload food addresses
 	$( '#reset' ).click( function(){
-		$().attr( 'value', searchText );
-		$( '#content > div > div:first' ).append( persist.liveInfo.originalDownload );
+		$( '#addressForm' ).attr( 'value', searchText );
+		$( '#content > div > div:first' ).html( persist.liveInfo.originalDownload );
 		
 	} );
 	
@@ -232,13 +232,12 @@ $(document).ready( function( $ ){
 	 //this trigger MUST be UNDER the original object on which it triggers an event
 	 //this handler can be extended to return all of the app state
 	 //no time for now, but this is a good approximation
-	 /*
 	if( !!persist.liveInfo.userAddress ){
 		try{
 			$( '#addressForm' ).val( persist.liveInfo.userAddress );
 			$( '#send' ).trigger('click');
 		}catch( error ){ console.log( error );}
-	}*/
+	}
 	
 	//capture the enter key at any time
 	//it is resetting the app instead of submitting the form
