@@ -81,7 +81,16 @@ $(document).ready( function( $ ){
     $( '#addressForm' ).focusout( function( e ){
         if( $( this ).attr( "value" ) == "") $(this).attr( "value", searchText);
     });
-
+	
+	//on reset
+	//reset the search field
+	//empty and reload current persistence object and reload food addresses
+	$( '#reset' ).click( function(){
+		$().attr( 'value', searchText );
+		$( '#content > div > div:first' ).append( persist.liveInfo.originalDownload );
+		
+	} );
+	
     //process downloaded document, and send to Google Maps to return a distance matrix
     //append distance matrix to appropriate elements in document, then sort by distance and display closest location
     $( '#send' ).click( function( ){
