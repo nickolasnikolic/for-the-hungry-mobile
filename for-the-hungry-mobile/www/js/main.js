@@ -72,7 +72,8 @@ $(document).ready( function( $ ){
 	}catch( error ){ console.log( error ); }
 	
     //upon interaction
-    $( '#content > div').mouseenter( function( ){
+    /*
+	$( '#content > div').mouseenter( function( ){
 		//cancel any other animations and timeouts
 		$().stop( true ).doTimeout( true );
         //slide others back shut and change their color and background back to default
@@ -98,7 +99,8 @@ $(document).ready( function( $ ){
             'background-position': persist.hideBackgroundImage
         });
     });
-
+	*/
+	
     $( '.reminder' ).live( "click", function( ){
         persist.liveInfo.setOriginalCallDate = true;
         //present user with the info
@@ -108,7 +110,7 @@ $(document).ready( function( $ ){
         //alert("New dates saved. A date 30 days in the future are set in place. but you can resave them at any time. Drop back into the app to see the countdown.");
     });
 
-    //This is a poor hack... but the duplication was driving me batty
+    //This is a poor hack...
     function quickFooterTemplate( whichContent ){
 
         //set a quick default var

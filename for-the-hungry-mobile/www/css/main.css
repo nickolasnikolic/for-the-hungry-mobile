@@ -54,35 +54,13 @@ form{
 	overflow: visible;
 }
 
-#header h1{
-	color: #ffc;
-	padding: 15px 0px;
-	margin-bottom: 1.5em;
-	line-height: 1.1em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	width: 100px;
-	height: 60px;
-	text-align: center;
-	border-radius: 0px 25%;
-	background-color: #d4a00f;
-	box-shadow: 5px 5px 10px #888;
-	cursor: pointer;
-}
-
-#fb-root{
-	display: none;	
-}
-
 #content{
 	font-family: 'Lato', sans-serif;
-	width: 720px;
+	width: 320px;
 	margin: 0px auto;
 	height: 500px;
 	overflow: hidden;
-	background: #000 url( '../images/background.jpg' ) no-repeat scroll;
-	border-radius: 0px 175px;
+	background: #000 url( '../img/background.jpg' ) no-repeat scroll;
 	box-shadow: 0px 0px 20px #888;
 }
 #content > div {
@@ -91,7 +69,7 @@ form{
 	float: left;
 	color: white;
 	background-color: rgba( 15, 92, 172, 0.5 );
-	background-image: url( '../images/contentDivRightBorder.png' );
+	background-image: url( '../img/contentDivRightBorder.png' );
 	background-repeat: repeat-y;
 	background-position: right;
 	overflow: hidden;
@@ -195,28 +173,6 @@ form{
 	color: darkred;	
 }
 
-#friendsPanel{}
-
-#friendsPanel div p{
-	text-wrap: normal;
-	height: auto;
-	width: 150px;
-	margin: 1em;
-	padding: .5em;
-	background-color: rgba( 128, 128 , 92, 0.5 );
-	border-radius: 10px;
-}
-
-#friendsPanel div p:nth-of-type(1){
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-bottom: 1.5em;
-}
-
-#friendsPanel div p:last-child{
-	background-color: rgba( 255, 128, 92, 0.5 );
-}
-
 #donationsPanel{}
 
 #donationMethods, #donationBrag{
@@ -229,13 +185,6 @@ form{
 	border-radius: 10px;
 }
 
-#donationBrag{
-	float: right;
-	clear: both;
-	background-color: rgba( 255, 128, 92, 0.5 )
-}
-
-
 #donationMethods{
 	padding-left: 1.5em;
 	padding-right: 0px;
@@ -245,7 +194,6 @@ form{
 	height: auto;
 	width: 560px;
 }
-
 
 #donationMethods p{
 	line-height: 2em;
@@ -265,7 +213,6 @@ form{
 .textToLeft{
 	text-align: left;	
 }
-
 
 #footer{
 	margin: 15px auto;
@@ -308,7 +255,6 @@ form{
 	padding-top: 6px;
 	width:30px;
 	height:20px;
-	border-radius:0px 12px;
 	font-size:15px;
 	color:#fff;
 	line-height:100%;
@@ -327,34 +273,5 @@ form{
 #whoFor, #header p{
 	text-align: right;
 	font: inherit;
-}
-
-/*
-No longer like the 2-1-1 info on the side when the screen is wide enough; trying it back at the bottom to see how it looks for a while.
-This overwrites the previous rules for regular positioning
-@media screen and (max-width: 1260px) {} 
-*/
-
-
-#footer{
-	margin: 15px auto;
-	border-radius: 10px;
-	font-family: 'The Girl Next Door', cursive;
-	background-color: transparent;
-	padding: 1em;
-	font-size: 1em;
-	width: 95%;
-	
-	
-	line-height: 1em;
-
-	overflow: visible;
-	
-	position: inherit;
-}
-
-#footer p{
-	width: 100%;
-	height: auto;	
 }
 	
