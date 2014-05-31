@@ -50,8 +50,6 @@ form{
 	color: black;
 	font-size: 175%;
 	padding: 15px;
-	height: 50px;
-	background-color: rgba( 255, 255, 255, 0.8 );
 	text-shadow: 5px 5px 5px #ccc;
 }
 
@@ -67,7 +65,6 @@ form{
 #mealSitePanel{}
 
 #mealSitePanel form{
-	border-radius: 8px;
 	padding: 0.25em;
 	text-wrap: none;
 	margin: auto;
@@ -87,22 +84,9 @@ form{
 	padding: 0.25em;	
 }
 
-#all_mealsites{
-	border-radius: 8px;
-	margin: 1em auto;
-	overflow-y: auto;
-	overflow-x: hidden;	
-}
+#all_mealsites{}
 
-.matchlist_panel{
-	margin: 0px;
-	line-height: 1em;
-	font-weight: bolder;
-	margin-bottom: 0.5em;
-	padding: 1em;
-	background-color: rgba( 15, 92, 172, 0.5 );
-	border-radius: 10px;
-}
+.matchlist_panel{}
 
 .matchlist_panel p{}
 
