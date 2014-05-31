@@ -38,7 +38,7 @@ form{
 	font-family: 'Lato', sans-serif;
 	margin: 0px auto;
 	overflow: hidden;
-	background: #000 url( '../img/background.jpg' ) no-repeat scroll;
+	background-color: #000;
 	box-shadow: 0px 0px 20px #888;
 }
 #content > div {}
@@ -67,7 +67,6 @@ form{
 #mealSitePanel{}
 
 #mealSitePanel form{
-	background-color: rgba( 255, 128, 92, 0.5 );
 	border-radius: 8px;
 	padding: 0.25em;
 	text-wrap: none;
@@ -82,8 +81,6 @@ form{
 
 #mealSitePanel p{
 	font-size: 1em;
-	background-color: rgb( 204, 204, 102 );
-	border-radius: 7px;
 }
 
 #mealSitePanel > div p{
