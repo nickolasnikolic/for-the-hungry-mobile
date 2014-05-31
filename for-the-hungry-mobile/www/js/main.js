@@ -132,11 +132,7 @@ $(document).ready( function( $ ){
 
         case 'first' || 'firstSeen' || 1:
 
-            $( '#footer' ).html('<p>If you are in need of emergency food, <em>call the phone number 2-1-1</em> to recieve foodstuffs for your home.</p><p>You will talk to a trained representative first and you may only recieve emergency food <em>once every 30 days.</em></p><p>Once you call, <a class="reminder">click&nbsp;here</a> to have an in-app reminder set.</p>');
-			$( '#footer p' ).each( function( index ){
-					$( this ).prepend( '<div id="num">' +  ++index + '</div>' );
-				});
-			$( '#footer' ).append('<p id="whoFor">On behalf of the Hunger Task Force of the Greater Milwaukee Area.</p>' );
+            $( '#footer' ).html('<p class="item">If you are in need of emergency food, <em>call the phone number 2-1-1</em> to recieve foodstuffs for your home.</p><p>You will talk to a trained representative first and you may only recieve emergency food <em>once every 30 days.</em></p><p>Once you call, <a class="reminder">click&nbsp;here</a> to have an in-app reminder set.</p>');
 
             break;
 
@@ -144,19 +140,15 @@ $(document).ready( function( $ ){
         case 'second' || 'final' || 0:
 
 
-            $( '#footer' ).html("<p>You may <em>call 2-1-1</em> for emergency food supplies <em>" + needToWait + "</em>.</p>");
-            $( '#footer' ).append('<p>You originally called ' + whenCalled + '</p>');
-            $( '#footer' ).append('<p>Want to <a class="reminder">save&nbsp;today\'s&nbsp;date</a> to get your next emergency food supplies?</p>');
-			$( '#footer p' ).each( function( index ){
-					$( this ).prepend( '<div id="num"></div>' );
-				});
-			$( '#footer' ).append('<p id="whoFor">On behalf of the Hunger Task Force of the Greater Milwaukee Area.</p>' );
+            $( '#footer' ).html('<p class="item">You may <em>call 2-1-1</em> for emergency food supplies <em>' + needToWait + '</em>.</p>');
+            $( '#footer' ).append('<p class="item">You originally called ' + whenCalled + '</p>');
+            $( '#footer' ).append('<p class="item">Want to <a class="reminder">save&nbsp;today\'s&nbsp;date</a> to get your next emergency food supplies?</p>');
 
             break;
 
 
         case 'default':
-			$( '#footer' ).append('<p id="whoFor">On behalf of the Hunger Task Force of the Greater Milwaukee Area.</p>' );
+			$( '#footer' ).append('<p id="whoFor">On behalf of the hungry in the Greater Milwaukee Area.</p>' );
 			
             break;
 
