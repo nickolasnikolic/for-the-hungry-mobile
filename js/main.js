@@ -87,7 +87,7 @@ $(document).ready( function( $ ){
 	//empty and reload current persistence object and reload food addresses
 	$( '#reset' ).click( function(){
 		$( '#addressForm' ).attr( 'value', searchText );
-		$( '#content > div > div:first' ).html( persist.liveInfo.originalDownload );
+		$( '#all_mealsites' ).html( persist.liveInfo.originalDownload );
 		
 	} );
 	
