@@ -66,6 +66,11 @@ input[type='text']{
 	margin: auto;
 }
 
+#mealSitePanel div{
+	padding: 0.50em;
+	margin-bottom: 1em;
+}
+
 #mealSitePanel form input:nth-of-type( 1 ){}
 
 #mealSitePanel form input:nth-of-type( 2 ){}
