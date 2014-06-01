@@ -239,6 +239,7 @@ $(document).ready( function( $ ){
 	//if find closest to here is clicked
 	//punch value into #addressForm
 	//simulate a click on #send
+	/*
 	$( '#find' ).click( function(){
 		$( '#addressForm' ).val( function(){
 			navigator.geolocation.getCurrentPosition( function( position ){
@@ -250,6 +251,7 @@ $(document).ready( function( $ ){
 		} );
 		$( '#send' ).trigger( 'click' );
 	} );
+	*/
 	
 	//capture the enter key at any time
 	//it is resetting the app instead of submitting the form
