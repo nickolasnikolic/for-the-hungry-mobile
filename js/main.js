@@ -244,8 +244,8 @@ $(document).ready( function( $ ){
 			navigator.geolocation.getCurrentPosition( function( position ){
 					return 'lat: ' + position.coords.latitude + 'long: ' + position.coords.longitude;
 				},
-                function(){
-					alert( 'Could not get geolocation data, please check to see if location services (gps) are available.' );
+                function( error ){
+					alert( 'Could not get geolocation data, please check to see if location services (gps) are available. The error was: ' + error.message );
 				});
 		} );
 		$( '#send' ).trigger( 'click' );
