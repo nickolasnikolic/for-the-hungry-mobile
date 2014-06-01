@@ -31,7 +31,7 @@ form{
 }
 
 input[type='text']{
-	border: thin dotted #78FDFB;
+	border: thin solid #ccc;
 	padding: 4px;
 	margin-bottom: 5px;
 	margin-top: -10px;
