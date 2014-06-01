@@ -134,7 +134,7 @@ $(document).ready( function( $ ){
 			persist.liveInfo.userInput = $( '#addressForm' ).val();
 			//persist.saveOne( persist.liveInfo.userInput );
 			//first get origin location for later comparison from input
-			persist.liveInfo.userAddress = persist.liveInfo.userInput; //syncing for regurlar first time user
+			persist.liveInfo.userAddress = persist.liveInfo.userInput; //syncing for regular first time user
 	
 			//if we have a totally fresh request set up the following values for sending to google maps
 	   
@@ -218,10 +218,7 @@ $(document).ready( function( $ ){
 				//finished at least one iteration of session feature, propagate the global flags for next time...
                 persist.liveInfo.returningUser = true;
 
-                //reset footer after setting main content
-                chooseWhichTemplate();
-				
-				persist.saveLiveInfo();
+ 				persist.saveLiveInfo();
 				persist.test();	
             }
         } //function spoolToJqueryObject    
@@ -238,6 +235,21 @@ $(document).ready( function( $ ){
 			$( '#send' ).trigger('click');
 		}catch( error ){ console.log( error );}
 	}
+	
+	//if find closest to here is clicked
+	//punch value into #addressForm
+	//simulate a click on #send
+	$( '#find' ).click( function(){
+		$( '#addressForm' ).val( function(){
+			navigator.geolocation.getCurrentPosition( function( position ){
+					return 'lat: ' + position.coords.latitude + 'long: ' + position.coords.longitude;
+				},
+                function(){
+					alert( 'Could not get geolocation data, please check to see if location services (gps) are available.' );
+				});
+		} );
+		$( '#send' ).trigger( 'click' );
+	} );
 	
 	//capture the enter key at any time
 	//it is resetting the app instead of submitting the form
