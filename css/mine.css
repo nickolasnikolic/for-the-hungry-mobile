@@ -46,7 +46,7 @@ form{
 #content > div:first-child{}
 
 #content > div > h2{
-	font-family: 'Paytone One', sans-serif;
+	/*font-family: 'Paytone One', sans-serif; */
 	color: black;
 	font-size: 175%;
 	padding: 15px;
