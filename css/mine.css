@@ -49,14 +49,13 @@ form{
 	/*font-family: 'Paytone One', sans-serif; */
 	color: black;
 	font-size: 175%;
-	padding: 15px;
+	padding: 5px;
 	text-shadow: 5px 5px 5px #ccc;
 }
 
 #content > div > div{
 	width: 100%
 	height: 100%;
-	padding: 1em;
 	overflow: hidden;
 }
 
@@ -107,7 +106,6 @@ form{
 .textToLeft{}
 
 #footer{}
-
 
 #footer p{}
 
